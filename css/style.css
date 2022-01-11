@@ -1,0 +1,126 @@
+:root {
+  --purple: #781C68;
+  --ligth-purple: #9A0680;
+  --yellow: #FFD39A;
+  --light-yellow: #FFF5E1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--light-yellow);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: var(--yellow);
+}
+
+.header__logo {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.header__powered {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.s-menu{
+  width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--yellow);
+  border-bottom-left-radius: .6rem;
+  border-bottom-right-radius: .6rem;
+}
+
+.menu__search-input {
+  padding: 1rem .5rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 3px solid #ccc;
+  border-radius: .3rem;
+}
+
+.menu__search-input:focus {
+  outline: none;
+}
+
+.menu__search-submit {
+  padding: 1rem .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--ligth-purple);
+  border: none;
+  border-bottom: 3px solid var(--purple);
+  border-radius: .3rem;
+}
+
+.menu__search-submit:hover {
+  cursor: pointer;
+}
+
+.menu__search-submit:active {
+  background-color: var(--purple);
+}
+
+.menu__remove-button {
+  padding: 1rem .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #d11616;
+  border: none;
+  border-bottom: 3px solid #8d0000;
+  border-radius: .3rem;
+}
+
+.menu__remove-button:hover {
+  cursor: pointer;
+}
+
+.menu__remove-button:active {
+  background-color: #8d0000;
+}
+
+.s-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.box__img{
+  width: 300px;
+}
+
+@media (max-width: 500px) {
+  .s-menu {
+    width: 100%;
+  }
+
+  .menu__search-input {
+    flex: 1 0 100%;
+  }
+}

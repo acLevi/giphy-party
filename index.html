@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giphy Party</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">GIPHY PARTY</h1>
+      <a class="header__powered" href="https://developers.giphy.com/docs/api" target="_blank">Powered By GIPHY</a>
+    </header>
+    <main>
+      <section class="s-menu">
+        <input
+          class="menu__search-input"
+          type="text"
+          name="search-input"
+          id="search-input"
+          placeholder="Enter a search item"
+        />
+        <button class="menu__search-submit">Search Giphy!</button>
+        <button class="menu__remove-button">Remove Images</button>
+      </section>
+      <!--s-menu-->
+      <section class="s-grid"></section>
+    </main>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
