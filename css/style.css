@@ -34,11 +34,6 @@ body {
   color: #fff;
 }
 
-.header__powered {
-  color: var(--purple);
-  text-decoration: none;
-}
-
 .s-menu{
   width: max-content;
   display: flex;
